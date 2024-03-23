@@ -1,9 +1,9 @@
 // Name the component as the jsx file
 function Hello(props) {
-    let { name, age } = props
+    const { name, age, emoji } = props
     return (
         <div>
-            <h1>Hello {name}! You are {age} </h1>
+            <h1>Hello {name} {emoji}! You are {age} </h1>
         </div>
     );
     }

@@ -1,11 +1,11 @@
 // Name the component as the jsx file
-const name = "Frederic";
-function Hello() {
-  return (
-    <div>
-      <h1>Hello from a component! {name}</h1>
-    </div>
-  );
-}
+function Hello(props) {
+    let { name, age } = props
+    return (
+        <div>
+            <h1>Hello {name}! You are {age} </h1>
+        </div>
+    );
+    }
 
 export default Hello;
